@@ -3,6 +3,8 @@
   --bgColor: #fdf6e3;
   --headsColor: #eee8d5;
   --commentColor: #93a1a1;
+  --linkColor: #b58900;
+  --linkHoverColor: #cb4b16;
 }
 
 :root.dark {
@@ -10,6 +12,8 @@
   --bgColor: #002b36;
   --headsColor: #073642;
   --commentColor: #586e75;
+  --linkColor: #b58900;
+  --linkHoverColor: #cb4b16;
 }
 
 :root.blue {
@@ -17,6 +21,8 @@
   --bgColor: #f5f5f5;
   --headsColor: #2196f3;
   --commentColor: #fff;
+  --linkColor: #ccc;
+  --linkHoverColor: #aaa;
 }
 
 html {
@@ -24,6 +30,19 @@ html {
   color: var(--baseColor);
   font-size: 2rem;
 }
+
+a {
+  margin: 0 50px;
+  color: var(--linkColor);
+}
+
+a:hover {
+  color: var(--linkHoverColor);
+  text-decoration: none;
+}
+
+
+
 
 .button {
   background-color: var(--headsColor);

@@ -14,6 +14,9 @@ storiesOf('Button', module)
       <button className="button" onClick={action('clicked')}>
         Hello Button
       </button>
+      <a href="https://github.com/le0pard/storybook-addon-root-attribute">
+        Go to addon
+      </a>
     </div>
   ))
   .add('with some emoji', () => (
@@ -26,5 +29,8 @@ storiesOf('Button', module)
           😀 😎 👍 💯
         </span>
       </button>
+      <a href="https://github.com/le0pard/storybook-addon-root-attribute">
+        Go to addon
+      </a>
     </div>
   ));
