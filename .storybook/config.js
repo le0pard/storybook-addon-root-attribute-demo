@@ -1,8 +1,7 @@
 import {
   configure,
   addDecorator,
-  addParameters,
-  storiesOf
+  addParameters
 } from '@storybook/react';
 import { withRootAttribute } from 'storybook-addon-root-attribute';
 
@@ -10,6 +9,7 @@ import { withRootAttribute } from 'storybook-addon-root-attribute';
 addDecorator(withRootAttribute);
 addParameters({
   rootAttribute: {
+    tooltip: true,
     defaultState: {
       name: "Light",
       value: null
