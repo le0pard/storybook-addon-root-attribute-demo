@@ -1,10 +1,7 @@
 module.exports = {
-  stories: [
-    '../stories/**/*.(js|mdx)'
-  ],
+  stories: ['../stories/**/*.@(js|mdx)'],
   addons: [
-    'storybook-addon-root-attribute/register',
-    '@storybook/addon-actions/register',
-    '@storybook/addon-links/register'
+    '@storybook/addon-essentials',
+    'storybook-addon-root-attribute/register'
   ]
 };

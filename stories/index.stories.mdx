@@ -1,0 +1,31 @@
+import {Meta, Story, Canvas} from '@storybook/addon-docs/blocks';
+import './styles.css';
+
+<Meta title="MDX/Buttons" component="button" />
+
+# Buttons
+
+## This example show, how storybook-addon-root-attribute apply different css class on html element. This changes apply different custom css variables inside components
+
+### [Go to addon](https://github.com/le0pard/storybook-addon-root-attribute)
+
+<!--- This is your Story template function, shown here in React-->
+
+export const Template = (args) => (
+  <button {...args} className="button" />
+)
+
+<Canvas>
+  <Story name="Simple" args={{
+    children: 'Hello button'
+  }}>
+    {Template.bind({})}
+   </Story>
+  <Story name="With smiles" args={{
+      children: '😀 😎 👍 💯'
+  }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+
